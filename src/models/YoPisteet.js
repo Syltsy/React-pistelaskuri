@@ -11,7 +11,7 @@ const YoPisteet = () =>{
     this.C = muut.C;
     this.B = muut.B;
     this.A = muut.A;
-  }*/
+  } //Needs to be in a Class*/
 var mathP = {
     L: 46,
     E: 43,

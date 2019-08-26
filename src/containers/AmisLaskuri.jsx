@@ -2,12 +2,12 @@ import React from 'react';
 import AmisPisteet from '../models/AmisPisteet';
 
 const AmisLaskuri = () => {
-    if(radioViisi=true){
+    /*if(radioViisi=true){
         arvo = keskiArvoViisi;
     }
     else{
         arvo = keskiArvoKolme;
-    };
+    };*/
     
     return(
     <form>      
