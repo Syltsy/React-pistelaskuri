@@ -1,14 +1,30 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const AmisPisteet = () => {
-    var keskiArvoKolme;
-    var keskiarvoViisi;
-    var pisteet;
+class AmisPisteet{
+
+  constructor(keskiArvoKolme, keskiarvoViisi, pisteet, asteikkoKolme, asteikkoViisi){
 
     this.keskiArvoKolme = keskiArvoKolme;
     this.keskiarvoViisi = keskiarvoViisi;
     this.pisteet = pisteet;
 
+    this.state = {vaikutus:
+      [
+        asteikkoKolme = {
+          kolme: 20,
+          kaksi: 13,
+          yksi: 2
+        },
+        asteikkoViisi = {
+          viisi: 20,
+          neljä: 15,
+          kolme: 10,
+          kaksi:5,
+          yksi: 1
+        }
+      ]
+    }
+  
       if ((keskiArvoKolme == 3.00) || (keskiarvoViisi == 5.00)){
         pisteet = 90;
       } else if ((keskiArvoKolme >= 2.98) || (keskiarvoViisi >= 4,97)) {
@@ -193,6 +209,7 @@ const AmisPisteet = () => {
         pisteet = 0;
       }
       return pisteet;
+    }
 }
 
 export default AmisPisteet;

@@ -1,26 +1,25 @@
 import React from 'react';
 import AmisPisteet from '../models/AmisPisteet';
+import useGlobal from '../store';
 
 const AmisLaskuri = () => {
-    /*if(radioViisi=true){
-        arvo = keskiArvoViisi;
+    if(AmisPisteet.radioKolme=true){
+        AmisPisteet = useGlobal.keskiArvoKolme;
     }
     else{
-        arvo = keskiArvoKolme;
-    };*/
+        AmisPisteet = useGlobal.keskiArvoViisi;
+    };
     
     return(
-    <form>      
-
-
+    <form>
     <div className="radio">
         <label>
-            <input id="radioKolme" type="radio" value="asteikkoKolme" checked="true"/>Arvosana-asteikko välillä 1-3
+            <input id="radioKolme"  name="radioKolme" type="radio" value="radioKolme"/>Arvosana-asteikko välillä 1-3
         </label>
     </div>
     <div className="radio">
         <label>
-            <input id="radioViisi" type="radio" value="asteikkoViisi"/>Arvosana-asteikko välillä 1-5
+            <input id="radioViisi" name="radioViisi" type="radio" value="radioViisi"/>Arvosana-asteikko välillä 1-5
         </label>
     </div>
         <table>

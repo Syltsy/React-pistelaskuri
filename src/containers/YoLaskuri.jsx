@@ -1,9 +1,9 @@
 import React from 'react';
 import YoPisteet from '../models/YoPisteet';
 import addElement from '../components/AddElement';
+import useGlobal from '../store';
 
 const YoLaskuri = () => {
-
     //<Dropdown title="Valitse aine" list={this.state.aine}/>
     return (
     <form>
@@ -28,21 +28,20 @@ const YoLaskuri = () => {
                 <option value="muut"   name="Vie">Vieraskieli(pitkä/lyhyt)</option>
                 </select>
         </div>
-
-    <div>
-            <select id="arvosana" name="arvosana">
-                <option value="this.state.YoPisteet.L">L</option>
-                <option value="this.state.YoPisteet.E">E</option>
-                <option value="this.state.YoPisteet.M">M</option>
-                <option value="this.state.YoPisteet.C">C</option>
-                <option value="this.state.YoPisteet.B">B</option>
-                <option value="this.state.YoPisteet.A">A</option>
-            </select>
-  </div>
+        <div>
+              <div>
+                <ul>
+              {this.state.list.map(item => (<li key={item}>{item}</li>))}
+              </ul>
+              </div>
+            );
+          }
+        </div>
   <div>
   <button type="button" id="btn" name="button" onclick="addElement">Lisää</button>
   </div>
   </form>
+          
   )
 };
 export default YoLaskuri;
@@ -85,5 +84,15 @@ export default YoLaskuri;
       </div>
     )
   }
+
+    <div>
+            <select id="arvosana" name="arvosana">
+                <option value="this.state.YoPisteet.L">L</option>
+                <option value="this.state.YoPisteet.E">E</option>
+                <option value="this.state.YoPisteet.M">M</option>
+                <option value="this.state.YoPisteet.C">C</option>
+                <option value="this.state.YoPisteet.B">B</option>
+                <option value="this.state.YoPisteet.A">A</option>
+            </select>
 
 */
