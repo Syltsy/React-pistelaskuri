@@ -5,7 +5,7 @@ class YoPisteet{
 
   constructor(props, arvo, L, E, M, C, B, A) {
     super(props);
-    //this.state.arvo = arvo;
+    this.state.arvo = arvo;
     this.state.L = L;
     this.state.E = E;
     this.state.M = M;

@@ -37,14 +37,14 @@ const AmisLaskuri = () => {
             <table>
                 <tr>
                     <td>Keskiarvo asteikolla </td>
-                    <td><input type="number" min="1" max="3" step="0.01" name="keskiArvoKolme" id="kolmonen" value="asteikkoKolme"/></td>
+                    <td><input type="number" min="1" max="3" step="0.01" name="keskiArvoKolme" id="kolmonen" value={this.state.value}/></td>
                 </tr>
                 <tr>
                     <td>Keskiarvo asteikolla </td>
-                <td><input type="number" min="1" max="5" step="0.01" name="keskiarvoViisi" id="vitonen" value="asteikkoViisi"/></td>
+                <td><input type="number" min="1" max="5" step="0.01" name="keskiarvoViisi" id="vitonen" value={this.state.value}/></td>
                 </tr>
             </table>
-            <button type="button" id="btn" name="button" onclick="document.write(pisteet)">Näytä pisteet</button>
+            <button type="button" id="btn" name="button" onclick={this.onsubmit.bind(this)}>Näytä pisteet</button>
         </div>
         </form>
     );
