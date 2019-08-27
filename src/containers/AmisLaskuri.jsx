@@ -1,13 +1,24 @@
 import React from 'react';
 import AmisPisteet from '../models/AmisPisteet';
 import useGlobal from '../store';
+import { NavLink } from "react-router-dom";
+
+const NavBar = () => {
+    return(
+    <div>
+        <NavLink to="YoLaskuri">Ylioppilaiden pistelaskuri</NavLink>
+        <NavLink to="Home">Aloitussivu</NavLink>
+    </div>
+    );
+}
+
 
 const AmisLaskuri = () => {
     if(AmisPisteet.radioKolme=true){
-        AmisPisteet = useGlobal.keskiArvoKolme;
+        AmisPisteet.pisteet = AmisPisteet.keskiArvoKolme;
     }
     else{
-        AmisPisteet = useGlobal.keskiArvoViisi;
+        AmisPisteet.pisteet = AmisPisteet.keskiArvoViisi;
     };
     
     return(
@@ -37,14 +48,14 @@ const AmisLaskuri = () => {
             <table>
                 <tr>
                     <td>Keskiarvo asteikolla </td>
-                    <td><input type="number" min="1" max="3" step="0.01" name="keskiArvoKolme" id="kolmonen" value={this.state.value}/></td>
+                    <td><input type="number" min="1" max="3" step="0.01" name="keskiArvoKolme" id="kolmonen" value={AmisPisteet.pisteet}/></td>
                 </tr>
                 <tr>
                     <td>Keskiarvo asteikolla </td>
-                <td><input type="number" min="1" max="5" step="0.01" name="keskiarvoViisi" id="vitonen" value={this.state.value}/></td>
+                <td><input type="number" min="1" max="5" step="0.01" name="keskiarvoViisi" id="vitonen" value={AmisPisteet.pisteet}/></td>
                 </tr>
             </table>
-            <button type="button" id="btn" name="button" onclick={this.onsubmit.bind(this)}>Näytä pisteet</button>
+            <button type="button" id="btn" name="button" onclick={AmisPisteet.pisteet}>Näytä pisteet</button>
         </div>
         </form>
     );
