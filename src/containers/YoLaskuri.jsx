@@ -42,7 +42,7 @@ const YoLaskuri = () => {
         </div>
  
   <div>
-  <button type="button" id="btn" name="button" onclick="addElement">Lisää</button>
+  <button type="button" id="btn" name="button" onclick={addElement}>Lisää</button>
   </div>
   </form>
           
