@@ -3,18 +3,17 @@ import React, {Component} from 'react';
 
 class YoPisteet{
 
-  constructor(props, arvo, L, E, M, C, B, A) {
-    super(props);
-    this.state.arvo = arvo;
+  constructor(arvosana, L, E, M, C, B, A) {
+    this.state.arvosana = arvosana;
     this.state.L = L;
     this.state.E = E;
     this.state.M = M;
     this.state.C = C;
     this.state.B = B;
     this.state.A = A;
-   //Needs to be in a Class*/
-    this.state = {
-      arvo:[
+   //Needs to be in a Class
+    /*this.state = {
+      arvosana:[
             mathP = {
                     L: 46,
                     E: 43,
@@ -64,7 +63,7 @@ class YoPisteet{
                           A: 3
                         }
         ],
-      }; //this.state
+      };*/ //this.state
     } //constructor
 };
 

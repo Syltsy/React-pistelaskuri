@@ -214,7 +214,7 @@ class AmisPisteet{
       } else if ((keskiArvoKolme >= 1.00) || (keskiarvoViisi >= 1.00)) {
         pisteet = 0;
       }
-      return pisteet;
+      return keskiArvoKolme, keskiarvoViisi, pisteet, asteikkoKolme, asteikkoViisi;
     }
 }
 

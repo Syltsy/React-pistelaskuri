@@ -2,6 +2,18 @@ import React from 'react';
 import YoPisteet from '../models/YoPisteet';
 import addElement from '../components/AddElement';
 import useGlobal from '../store';
+import { NavLink } from "react-router-dom";
+
+const NavBar = () => {
+
+  return(
+    <div>
+    <NavLink to="AmisLaskuri">Ammattikoululaisten pistelaskuri</NavLink>
+    <NavLink to="Home">Aloitussivu</NavLink>
+  </div>
+  );
+
+}
 
 const YoLaskuri = () => {
     //<Dropdown title="Valitse aine" list={this.state.aine}/>
@@ -28,17 +40,9 @@ const YoLaskuri = () => {
                 <option value="muut"   name="Vie">Vieraskieli(pitkä/lyhyt)</option>
                 </select>
         </div>
-        <div>
-              <div>
-                <ul>
-              {this.state.list.map(item => (<li key={item}>{item}</li>))}
-              </ul>
-              </div>
-            );
-          }
-        </div>
+ 
   <div>
-  <button type="button" id="btn" name="button" onclick="addElement">Lisää</button>
+  <button type="button" id="btn" name="button" onclick={addElement}>Lisää</button>
   </div>
   </form>
           
@@ -94,5 +98,17 @@ export default YoLaskuri;
                 <option value="this.state.YoPisteet.B">B</option>
                 <option value="this.state.YoPisteet.A">A</option>
             </select>
+
+                          <div>
+                <ul>
+                  {this.state.list.map(item => (<li key={item}>{item}</li>))}
+              </ul>
+              </div>
+
+                     <div>
+
+            );
+          }
+        </div>
 
 */

@@ -7,3 +7,5 @@ const AddElement = () => {
         arvo:[{nimi:"", value:""}]
     }
 }
+
+export default AddElement;

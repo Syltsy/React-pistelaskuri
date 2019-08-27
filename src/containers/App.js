@@ -1,6 +1,7 @@
 import React from 'react';
-import AmisLaskuri from './containers/AmisLaskuri';
-import YoLaskuri from './containers/YoLaskuri';
+import AmisLaskuri from './AmisLaskuri';
+import YoLaskuri from './YoLaskuri';
+import { NavLink } from "react-router-dom";
 
 function App() {
 
@@ -9,9 +10,12 @@ function App() {
       <header className="App-header">
       </header>
       <form>
-
-    <AmisLaskuri></AmisLaskuri>
-    <YoLaskuri></YoLaskuri>
+        <tr>
+        <NavLink to="/AmisLaskuri">Ammattikoululaisten pistelaskuri</NavLink>
+        </tr>
+        <tr>
+        <NavLink to="/YoLaskuri">Ylioppilaiden pistelaskuri</NavLink>
+        </tr>
       </form>
     </div>
   );
