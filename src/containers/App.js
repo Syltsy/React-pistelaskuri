@@ -23,6 +23,11 @@ function App() {
 
 export default App;
 
+/* npm install lista
+use-global-hook
+react-router-dom
+*/
+
       /*<div className="radio">
         <label>
             <input id="radioAmis" type="radio" value="<AmisLaskuri />"

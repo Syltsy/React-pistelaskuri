@@ -10,3 +10,5 @@ const NavBar = () => {
         </div>
     );
 }
+
+/*Pistelaskureiden etusivu, josta valitaan että kumpaa pistelaskuria käytetään.*/

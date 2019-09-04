@@ -40,6 +40,16 @@ const YoLaskuri = () => {
                 <option value="muut"   name="Vie">Vieraskieli(pitkä/lyhyt)</option>
                 </select>
         </div>
+        <div>
+        <select id="arvosana" class="" name="arvosana">
+      <option value="document.getElementById('display').innerHTML">L</option>
+      <option value="document.getElementById('display').innerHTML">E</option>
+      <option value="document.getElementById('display').innerHTML">M</option>
+      <option value="document.getElementById('display').innerHTML">C</option>
+      <option value="document.getElementById('display').innerHTML">B</option>
+      <option value="document.getElementById('display').innerHTML">A</option>
+    </select>
+        </div>
  
   <div>
   <button type="button" id="btn" name="button" onclick={addElement}>Lisää</button>
@@ -50,65 +60,5 @@ const YoLaskuri = () => {
 };
 export default YoLaskuri;
 
-/*constructor(props){
-    super(props)
-    this.state = {
-      listOpen: false,
-      headerTitle: this.props.title
-    }
-  }
-  
-  handleClickOutside(){
-    this.setState({
-      listOpen: false
-    })
-  }
-  toggleList(){
-    this.setState(prevState => ({
-      listOpen: !prevState.listOpen
-    }))
-  }
-  render(){
-    const{list} = this.props
-    const{listOpen, headerTitle} = this.state
-    return(
-      <div className="dd-wrapper">
-  <div className="dd-header" onClick={() => this.toggleList()}>
-          <div className="dd-header-title">{headerTitle}</div>
-          {listOpen
-            ? <FontAwesome name="angle-up" size="2x"/>
-            : <FontAwesome name="angle-down" size="2x"/>
-          }
-      </div>
-  {listOpen && <ul className="dd-list">
-         {list.map((item) => (
-           <li className="dd-list-item" key={item.id} >{item.title}</li>
-          ))}
-        </ul>}
-      </div>
-    )
-  }
-
-    <div>
-            <select id="arvosana" name="arvosana">
-                <option value="this.state.YoPisteet.L">L</option>
-                <option value="this.state.YoPisteet.E">E</option>
-                <option value="this.state.YoPisteet.M">M</option>
-                <option value="this.state.YoPisteet.C">C</option>
-                <option value="this.state.YoPisteet.B">B</option>
-                <option value="this.state.YoPisteet.A">A</option>
-            </select>
-
-                          <div>
-                <ul>
-                  {this.state.list.map(item => (<li key={item}>{item}</li>))}
-              </ul>
-              </div>
-
-                     <div>
-
-            );
-          }
-        </div>
-
-*/
+/*Ylioppilaiden pistelaskuri. Lista valittavista aineista sekä mitä pistemääräskaalaa kyseinen aine käyttää =value-arvo listassa.
+Arvosana-listasta valitaan kokeissa saatu arvosana. Napilla kutsutaan addElement-funktiota, joka hoitaa elementin lisyksen listaan.*/

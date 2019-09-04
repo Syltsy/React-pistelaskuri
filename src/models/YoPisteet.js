@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 
-
 class YoPisteet{
-
   constructor(arvosana, L, E, M, C, B, A) {
     this.state.arvosana = arvosana;
     this.state.L = L;
@@ -12,7 +10,7 @@ class YoPisteet{
     this.state.B = B;
     this.state.A = A;
    //Needs to be in a Class
-    /*this.state = {
+    this.state = {
       arvosana:[
             mathP = {
                     L: 46,
@@ -63,8 +61,10 @@ class YoPisteet{
                           A: 3
                         }
         ],
-      };*/ //this.state
+      }; //this.state
     } //constructor
 };
 
 export default YoPisteet;
+
+/*Ylioppilaiden pistelaskurin pistemääräskaalat. Täältä valitaan aineen pituuden mukaan riippuvat pistemäärät.*/

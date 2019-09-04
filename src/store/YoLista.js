@@ -127,3 +127,5 @@ class YoLista{
       }
 }
 export default YoLista;
+
+/*Ylioppilaiden pistelaskurin YoLista-elementti. */

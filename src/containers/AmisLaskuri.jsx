@@ -43,6 +43,8 @@ const AmisLaskuri = () => {
                 <td>Matemaattisluonnontiteteellinen osaaminen</td>
                 <td>Yhteiskunta- ja työelämäosaaminen</td>
             </tr>
+
+            
         </table>
         <div class="">
             <table>
@@ -61,3 +63,6 @@ const AmisLaskuri = () => {
     );
 };
 export default AmisLaskuri;
+
+/*Ammattkoulun pistelaskuri. Radio napeilla valitaan arvosana-asteikko. Keskiarvo voidaan syöttää käsin tai valita lisäys/vähennys-napeilla.
+Yhteisten tutkinnon osien pisteet ja arvosana valikot haetaan AmisPisteet-tiedostosta.*/

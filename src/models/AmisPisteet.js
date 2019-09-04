@@ -219,3 +219,6 @@ class AmisPisteet{
 }
 
 export default AmisPisteet;
+
+/*Ammattikoilaisten pistelaskurin pistemäärät. Kuinka monta pistettä tulee tietyllä keskiarvolla sekä Yhteisten tutkinnot osien arvosanojen pistemäärä.
+AmisLaskuri hakee täältä tarvittavat tiedot.*/

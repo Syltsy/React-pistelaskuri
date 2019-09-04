@@ -4,8 +4,11 @@ import useGlobal from '../store';
 const AddElement = () => {
     const [{state, setState}] = useState();
     state = {
-        arvo:[{nimi:"", value:""}]
+        arvo:[{nimi:"", arvosana: "", value:""}]
     }
 }
 
 export default AddElement;
+
+/*Elementin lisäys listaan. Tämä lisää YoListasta valitun aineen nimen, arvosanan sekä saatavan pistemäärän listaan,
+josta käyttäjä näkee, mitä on syötetty*/
