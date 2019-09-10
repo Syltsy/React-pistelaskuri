@@ -16,8 +16,9 @@ const NavBar = () => {
 }
 
 const YoLaskuri = () => {
-    //<Dropdown title="Valitse aine" list={this.state.aine}/>
+    
     return (
+      //<Dropdown title="Valitse aine" list={this.state.aine}/>
     <form>
         <div>
             <select id="yolista" name="yolista">
