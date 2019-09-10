@@ -10,13 +10,15 @@ class AmisPisteet{
 
     this.state = {vaikutus:
       [
-        asteikkoKolme = {
+        {
+          nimi:'asteikkoKolme',
           max: 3,
           kolme: 20,
           kaksi: 13,
           yksi: 2
         },
-        asteikkoViisi = {
+        {
+          nimi:'asteikkoViisi',
           max: 5,
           viisi: 20,
           neljä: 15,

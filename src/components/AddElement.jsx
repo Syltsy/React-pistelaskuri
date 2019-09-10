@@ -4,7 +4,7 @@ import useGlobal from '../store';
 const AddElement = () => {
     const [{state, setState}] = useState();
     state = {
-        arvo:[{nimi:"", arvosana: "", value:""}]
+        arvo:[{nimi:"", arvosana: "", value:"", selected:""}]
     }
 }
 

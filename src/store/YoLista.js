@@ -47,70 +47,70 @@ class YoLista{
             },
             {
                 id: 6,
-                title: 'Fysiikka',
+                title: 'Ainereaali: Fysiikka',
                 value: 'muut',
                 selected: false,
                 key: 'aine'
             },
             {
                 id: 7,
-                title: 'Kemia',
+                title: 'Ainereaali: Kemia',
                 value: 'muut',
                 selected: false,
                 key: 'aine'
             },
             {
                 id: 8,
-                title: 'Biologia',
+                title: 'Ainereaali: Biologia',
                 value: 'muut',
                 selected: false,
                 key: 'aine'
             },
             {
                 id: 9,
-                title: 'Maantiede',
+                title: 'Ainereaali: Maantiede',
                 value: 'muut',
                 selected: false,
                 key: 'aine'
             },
             {
                 id: 10,
-                title: 'Terveystieto',
+                title: 'Ainereaali: Terveystieto',
                 value: 'muut',
                 selected: false,
                 key: 'aine'
             },
             {
                 id: 11,
-                title: 'Psykologia',
+                title: 'Ainereaali: Psykologia',
                 value: 'muut',
                 selected: false,
                 key: 'aine'
             },
             {
                 id: 12,
-                title: 'Filosofia',
+                title: 'Ainereaali: Filosofia',
                 value: 'muut',
                 selected: false,
                 key: 'aine'
             },
             {
                 id: 13,
-                title: 'Historia',
+                title: 'Ainereaali: Historia',
                 value: 'muut',
                 selected: false,
                 key: 'aine'
             },
             {
                 id: 14,
-                title: 'Yhteiskuntaoppi',
+                title: 'Ainereaali: Yhteiskuntaoppi',
                 value: 'muut',
                 selected: false,
                 key: 'aine'
             },
             {
                 id: 15,
-                title: 'Uskonto/Elämäntieto',
+                title: 'Ainereaali: Uskonto/Elämäntieto',
                 value: 'muut',
                 selected: false,
                 key: 'aine'
@@ -128,4 +128,6 @@ class YoLista{
 }
 export default YoLista;
 
-/*Ylioppilaiden pistelaskurin YoLista-elementti. */
+/*Ylioppilaiden pistelaskurin YoLista-elementti.
+selected-arvoa tarvitaan -> Vieras/toinen kotimainen kieli -kohdassa huomioidaan kielten arvosanoista se, joka tuottaa kyseisessä kohdassa parhaat pisteet
+value-arvo kertoo, mitä pisteskaalaa käytetään.*/
